@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Fadhlil Azhim — Portofolio TKJ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== BACKGROUND NODE GRID (dekorasi jaringan) ===== -->
+<canvas id="netCanvas"></canvas>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-tag">$ whoami</div>
+  <nav class="nav-links">
+    <a href="#tentang">tentang</a>
+    <a href="#kompetensi">kompetensi</a>
+    <a href="#sertifikat">sertifikat</a>
+    <a href="#kontak">kontak</a>
+  </nav>
+  <button class="nav-burger" id="navBurger" aria-label="Buka menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ===== HERO / PERKENALAN ===== -->
+<section class="hero" id="tentang">
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <div class="rgb-ring"></div>
+      <img class="hero-photo" src="assets/profile.jpeg" alt="Foto profil Muhammad Fadhlil Azhim"
+           onerror="this.onerror=null;this.src='https://api.dicebear.com/7.x/initials/svg?seed=Fadhlil%20Azhim&backgroundColor=12161f&textColor=e6e9ef';">
+      <span class="status-dot" title="online"></span>
+    </div>
+
+    <div class="hero-text">
+      <p class="eyebrow">// STUDENT.PROFILE — SMK PLUS PELITA NUSANTARA</p>
+      <h1 class="hero-title">Muhammad Fadhlil <span class="grad-text">Azhim</span></h1>
+      <p class="hero-subtitle typewriter" id="typewriter"></p>
+
+      <div class="hero-meta">
+        <div class="meta-chip"><span class="meta-label">Kelas</span><span class="meta-value">XI TKJ 1</span></div>
+        <div class="meta-chip"><span class="meta-label">Jurusan</span><span class="meta-value">Teknik Komputer &amp; Jaringan</span></div>
+        <div class="meta-chip"><span class="meta-label">Sekolah</span><span class="meta-value">SMK Plus Pelita Nusantara</span></div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#kompetensi" class="btn btn-primary">Lihat Kompetensi</a>
+        <a href="#kontak" class="btn btn-ghost">Hubungi Saya</a>
+        <button type="button" class="btn btn-outline-rgb" id="btnLihatCV">Lihat CV</button>
+        <a href="assets/cv-fadhlil-azhim.jpeg" download class="btn btn-ghost">Unduh CV</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== KOMPETENSI ===== -->
+<section class="kompetensi" id="kompetensi">
+  <div class="section-head">
+    <p class="eyebrow">// CORE_COMPETENCY.LIST</p>
+    <h2>3 Kompetensi Utama Bidang TKJ</h2>
+    <p class="section-desc">Materi yang sudah saya pelajari dan praktikkan selama menempuh jurusan Teknik Komputer dan Jaringan, lengkap dengan dokumentasi praktik.</p>
+  </div>
+
+  <!-- KOMPETENSI 1: MIKROTIK -->
+  <article class="comp-block">
+    <div class="comp-heading">
+      <span class="comp-tag">COMP_01 · NETWORKING</span>
+      <h3>Mikrotik</h3>
+      <p>Konfigurasi perangkat jaringan menggunakan RouterOS Mikrotik, mulai dari pengaturan dasar router hingga membangun jaringan wireless dan hotspot untuk kebutuhan akses internet bersama.</p>
+    </div>
+
+    <div class="sub-grid">
+      <div class="sub-card">
+        <div class="sub-photo">
+          <img src="assets/mikrotik-vlan.jpeg" alt="Dokumentasi konfigurasi VLAN Mikrotik"
+               onerror="this.onerror=null;this.parentElement.classList.add('ph-fallback');">
+          <span class="ph-icon">🖧</span>
+        </div>
+        <div class="sub-body">
+          <h4>Konfigurasi VLAN</h4>
+          <p>Membagi satu jaringan fisik menjadi beberapa segmen jaringan virtual (VLAN) agar lalu lintas data lebih tertata, aman, dan efisien antar divisi atau ruangan.</p>
+        </div>
+      </div>
+
+      <div class="sub-card">
+        <div class="sub-photo">
+          <img src="assets/mikrotik-hotspot.jpeg" alt="Dokumentasi konfigurasi Hotspot dan WLAN Mikrotik"
+               onerror="this.onerror=null;this.parentElement.classList.add('ph-fallback');">
+          <span class="ph-icon">📶</span>
+        </div>
+        <div class="sub-body">
+          <h4>Hotspot &amp; WLAN</h4>
+          <p>Membangun jaringan nirkabel (WLAN) lengkap dengan sistem login hotspot, termasuk pengaturan user profile, bandwidth limiter, dan halaman login kustom.</p>
+        </div>
+      </div>
+
+      <div class="sub-card">
+        <div class="sub-photo">
+          <img src="assets/mikrotik-dasar.jpeg" alt="Dokumentasi konfigurasi dasar Mikrotik"
+               onerror="this.onerror=null;this.parentElement.classList.add('ph-fallback');">
+          <span class="ph-icon">⚙️</span>
+        </div>
+        <div class="sub-body">
+          <h4>Konfigurasi Dasar</h4>
+          <p>Pengaturan awal router Mikrotik seperti reset konfigurasi, pemberian IP address, DHCP server, NAT, dan routing sederhana sebagai fondasi sebelum konfigurasi lanjutan.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- KOMPETENSI 2: FIBER OPTIK -->
+  <article class="comp-block">
+    <div class="comp-heading">
+      <span class="comp-tag">COMP_02 · INFRASTRUCTURE</span>
+      <h3>Fiber Optik</h3>
+      <p>Praktik penyambungan kabel fiber optik menggunakan alat splicing, keterampilan penting untuk instalasi jaringan backbone berkecepatan tinggi.</p>
+    </div>
+
+    <div class="sub-grid sub-grid-single">
+      <div class="sub-card">
+        <div class="sub-photo">
+          <img src="assets/fiber-splicing.jpeg" alt="Dokumentasi praktik splicing fiber optik"
+               onerror="this.onerror=null;this.parentElement.classList.add('ph-fallback');">
+          <span class="ph-icon">🔬</span>
+        </div>
+        <div class="sub-body">
+          <h4>Splicing</h4>
+          <p>Menyambung dua ujung serat optik menggunakan fusion splicer agar cahaya dapat merambat tanpa hambatan berarti, lengkap dengan pengukuran redaman (loss) menggunakan OPM.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- KOMPETENSI 3: SERVER -->
+  <article class="comp-block">
+    <div class="comp-heading">
+      <span class="comp-tag">COMP_03 · SYSTEM ADMIN</span>
+      <h3>Server</h3>
+      <p>Instalasi dan pengelolaan sistem operasi server berbasis Linux sebagai dasar untuk menjalankan berbagai layanan jaringan.</p>
+    </div>
+
+    <div class="sub-grid sub-grid-single">
+      <div class="sub-card">
+        <div class="sub-photo">
+          <img src="assets/server-debian.jpeg" alt="Dokumentasi instalasi OS Debian"
+               onerror="this.onerror=null;this.parentElement.classList.add('ph-fallback');">
+          <span class="ph-icon">🖥️</span>
+        </div>
+        <div class="sub-body">
+          <h4>Instalasi OS Debian</h4>
+          <p>Melakukan instalasi sistem operasi Debian Server dari awal, termasuk partisi disk, konfigurasi jaringan dasar, dan persiapan sistem sebelum instalasi layanan server.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ===== SERTIFIKAT ===== -->
+<section class="sertifikat" id="sertifikat">
+  <div class="section-head">
+    <p class="eyebrow">// CERT.GALLERY</p>
+    <h2>Galeri Sertifikat</h2>
+    <p class="section-desc">Beberapa sertifikat yang pernah saya dapatkan selama belajar dan mengikuti kegiatan di bidang TKJ.</p>
+  </div>
+
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-frame">
+        <img src="assets/sertifikat-1.jpeg" alt="Sertifikat 1"
+             onerror="this.onerror=null;this.parentElement.classList.add('ph-fallback');">
+        <span class="ph-icon">📜</span>
+      </div>
+      <p class="cert-caption">Sertifikat 01</p>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-frame cert-frame-portrait">
+        <img src="assets/sertifikat-2.png" alt="Sertifikat 2"
+             onerror="this.onerror=null;this.parentElement.classList.add('ph-fallback');">
+        <span class="ph-icon">📜</span>
+      </div>
+      <p class="cert-caption">Sertifikat 02</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KONTAK ===== -->
+<section class="kontak" id="kontak">
+  <div class="section-head">
+    <p class="eyebrow">// CONNECT</p>
+    <h2>Hubungi Saya</h2>
+    <p class="section-desc">Silakan hubungi saya melalui salah satu tautan berikut.</p>
+  </div>
+
+  <div class="contact-grid">
+    <a href="https://wa.me/6289639039629" target="_blank" rel="noopener" class="contact-card contact-wa">
+      <span class="contact-icon">💬</span>
+      <span class="contact-name">WhatsApp</span>
+      <span class="contact-sub">Chat langsung</span>
+    </a>
+
+    <a href="https://instagram.com/@zhimm_lenathea" target="_blank" rel="noopener" class="contact-card contact-ig">
+      <span class="contact-icon">📷</span>
+      <span class="contact-name">Instagram</span>
+      <span class="contact-sub">@zhimm_lenathea</span>
+    </a>
+
+    <a href="https://tiktok.com/@azhim812" target="_blank" rel="noopener" class="contact-card contact-tt">
+      <span class="contact-icon">🎵</span>
+      <span class="contact-name">TikTok</span>
+      <span class="contact-sub">@azhim812</span>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Muhammad Fadhlil Azhim — XI TKJ 1, SMK Plus Pelita Nusantara.</p>
+</footer>
+
+<!-- ===== MODAL CV ===== -->
+<div class="cv-modal" id="cvModal" aria-hidden="true">
+  <div class="cv-modal-overlay" id="cvModalOverlay"></div>
+  <div class="cv-modal-box">
+    <div class="cv-modal-head">
+      <span class="cv-modal-title">// CV.PREVIEW</span>
+      <button class="cv-modal-close" id="cvModalClose" aria-label="Tutup pratinjau CV">✕</button>
+    </div>
+    <iframe class="cv-modal-frame" id="cvModalFrame" src="" title="Pratinjau CV"></iframe>
+    <div class="cv-modal-footer">
+      <a href="assets/cv-fadhlil-azhim.jpg" download class="btn btn-primary">Unduh CV</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
